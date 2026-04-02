@@ -1,25 +1,16 @@
 {
   "version": 2,
-  "name": "trinacria-hub",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/index.py"
+  "name": "trinacriahub",
+  "experimentalServices": {
+    "frontend": {
+      "routePrefix": "/",
+      "framework": "create-react-app"
     },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+    "backend": {
+      "entrypoint": "backend",
+      "routePrefix": "/_/backend"
     }
-  ],
+  },
   "env": {
     "PYTHON_VERSION": "3.9"
   }
