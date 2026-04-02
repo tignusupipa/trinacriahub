@@ -1,0 +1,24 @@
+{
+  "name": "trinacria-hub",
+  "version": "1.0.0",
+  "description": "Trinacria Hub - E-commerce di Abbigliamento di Lusso",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && python simple_server.py",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "keywords": [
+    "ecommerce",
+    "fashion",
+    "luxury",
+    "react",
+    "fastapi"
+  ],
+  "author": "Trinacria Hub",
+  "license": "MIT"
+}
