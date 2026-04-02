@@ -29,13 +29,13 @@ const Footer = () => {
               Eleganza siciliana nel mondo della moda. Scopri la nostra esclusiva selezione di abbigliamento e scarpe dei migliori brand internazionali.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a href="#" className="w-10 h-10 bg-background bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all">
+              <a href="#!" className="w-10 h-10 bg-background bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-background bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all">
+              <a href="#!" className="w-10 h-10 bg-background bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-background bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all">
+              <a href="#!" className="w-10 h-10 bg-background bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all">
                 <Twitter className="w-5 h-5" />
               </a>
             </div>
@@ -105,10 +105,10 @@ const Footer = () => {
               © {currentYear} Trinacria Hub. Tutti i diritti riservati.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
+              <a href="#!" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
                 Privacy Policy
               </a>
-              <a href="#" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
+              <a href="#!" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
                 Termini di Servizio
               </a>
             </div>
