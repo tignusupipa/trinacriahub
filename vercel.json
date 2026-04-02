@@ -1,16 +1,21 @@
 {
   "version": 2,
   "name": "trinacriahub",
-  "experimentalServices": {
-    "frontend": {
-      "routePrefix": "/",
-      "framework": "create-react-app"
-    },
-    "backend": {
-      "entrypoint": "backend",
-      "routePrefix": "/_/backend"
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
     }
-  },
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/public/index.html"
+    }
+  ],
   "env": {
     "PYTHON_VERSION": "3.9"
   }
